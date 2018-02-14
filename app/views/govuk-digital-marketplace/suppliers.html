@@ -1,0 +1,97 @@
+{% extends "_layouts/govuk-pay.html" %}
+
+{% set section = "buyers" %}
+
+{% block content %}
+
+<main id="content" class="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li>
+          <a href="index.html">Digital Marketplace</a>
+      </li>
+      <li class="active">
+          suppliers
+      </li>
+    </ol>
+  </div>
+
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-large">Suppliers</h1>
+      <br>
+    </div>
+
+    <div class="column-two-thirds">
+      <a href="https://www.digitalmarketplace.service.gov.uk/digital-outcomes-and-specialists/opportunities">View Digital Outcomes and Specialists opportunities</a>
+      <br><br>
+      <p>Get updates about opportunities to sell on <br>the Digital Marketplace.</p>
+<!--       <p>Suppliers provide services to government using frameworks (legal agreements between you and the buyer). 
+      
+      Create an account to find out when frameworks open for applications.</p> -->
+      <form method="get" action="https://www.digitalmarketplace.service.gov.uk/suppliers/create">
+        <button class="button" type="submit">Create a supplier account</button>
+      </form>
+
+    </div>
+
+    
+    <div class="column-full">
+      <div class="section-border-top">
+      </div>
+    </div>
+
+  </div> 
+
+  <div class="grid-row">
+    <div class="column-two-thirds">  
+      <h2 class="heading-medium">Selling services</h1>
+      <p>Suppliers provide services to government using frameworks (legal agreements between you and the buyer).
+      <br>
+      <br> 
+      Create an account to find out when frameworks open for applications.</p>
+      <br>
+      <h3 class="heading-small margin-bottom">What you can supply on the G-Cloud framework</h3>
+      <ul class="list-bullet">
+        <li class="margin-bottom">
+          <span>Cloud hosting</span><br>
+          For example, content delivery networks or load balancing services
+        </li>
+        <li class="margin-bottom">
+          Cloud software<br>
+          For example, accounting tools or customer service software  
+        </li>
+        <li>
+          Cloud support<br>
+          For example, migration services or ongoing support          
+        </li>
+      </ul>
+      <br>
+
+      <h3 class="heading-small">What you can supply on the Digital Outcomes and Specialists framework</h3>
+      <ul class="list-bullet">
+        <li class="margin-bottom">
+          <span>Digital outcomes</span><br>
+          For example a booking system or an accessibility audit
+        </li>
+        <li class="margin-bottom">
+          <span>Digital specialists</span><br>
+          For example, a product manager or a developer
+        </li>
+        <li class="margin-bottom">
+          <span>User research studios</span>
+        </li>
+        <li class="margin-bottom">
+          <span>User research participants</span>
+        </li>
+      </ul>
+      <br>
+      <a href="https://www.gov.uk/guidance/digital-marketplace-suppliers-guide">Read the suppliers' guide for more information</a>
+    </div>
+  </div>  
+
+</main>
+
+{% endblock %}

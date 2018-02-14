@@ -75,7 +75,30 @@
     <footer class="group js-footer" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
-        {% block footer_top %}{% endblock %}
+        {% block footer_top %}
+          <div class="column-one-third">
+            <h3 class="heading-small">About the Digital Marketplace</h3>
+            <ul>
+              <li>
+                <a href="https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information">Guidance</a>
+              </li>
+              <li>
+                <a href="https://digitalmarketplace.blog.gov.uk/">Digital Marketplace blog</a>
+              </li>
+              <li>
+                <a href="https://www.digitalmarketplace.service.gov.uk/g-cloud/suppliers">G-Cloud supplier A-Z</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column-one-third">
+            <h3 class="heading-small">Contact</h3>
+            <ul>
+              <li>
+                <a href="">support@digitalmarketplace.service.gov.uk</a>
+              </li>
+            </ul>
+          </div>
+        {% endblock %}
 
         <div class="footer-meta">
           <div class="footer-meta-inner">
