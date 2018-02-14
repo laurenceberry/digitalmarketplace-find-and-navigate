@@ -1,0 +1,47 @@
+{% extends "_layouts/govuk-pay.html" %}
+
+{% block page_title %}
+    Digital Marketplace
+{% endblock %}
+
+
+{% block content %}
+
+
+<main id="content" class="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li>
+          <a href="index.html">Digital Marketplace</a>
+      </li>
+    </ol>
+  </div> 
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">Log in to the Digital Marketplace</h1>
+      <form autocomplete="off" action="/suppliers/account" method="POST">
+
+        <div class="form-group">
+          <label class="form-label heading-medium" for="email">Email address</label>
+          <p class="hint">Enter the email address you used to register with the Digital Marketplace</p>
+          <input class="form-control" id="email" name="email" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-control" id="password" name="password" type="text">
+        </div>
+        <input type="submit" class="button" value="Log in">
+
+      </form>
+      <br>
+      <a href="/buyers/create">Create a buyer account</a><br>
+      <a href="/suppliers/sell">Become a supplier</a>
+
+  </div> 
+
+</main>
+    
+
+{% endblock %}
