@@ -20,24 +20,17 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-large">Title</h1>
-      <form action="/title" method="post">
-
+      <h1 class="heading-large">
+        What do you want to call your requirements
+      </h1>
+      <p class="">This will help you refer to your requirements when talking to suppliers.</p>
+      <form autocomplete="off" action="/govuk-digital-marketplace/overview" method="POST">
         <div class="form-group">
-          <label class="form-label heading-medium" for="email">Email address</label>
-          <p class="hint">Enter the email address you used to register with the Digital Marketplace</p>
+          <p class="hint">100 characters maximum</p>
           <input class="form-control" id="email" name="email" type="text">
         </div>
-        <div class="form-group">
-          <label class="form-label" for="password">Password</label>
-          <input class="form-control" id="password" name="password" type="text">
-        </div>
-        <input type="submit" class="button" value="Log in">
-
+        <a href="overview_started" class="button">Save and continue</a>
       </form>
-      <br>
-      <a href="/buyers/create">Create a buyer account</a><br>
-      <a href="/suppliers/sell">Become a supplier</a>
 
   </div> 
 
